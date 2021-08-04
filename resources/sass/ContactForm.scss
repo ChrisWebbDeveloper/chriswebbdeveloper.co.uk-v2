@@ -1,0 +1,24 @@
+#ContactForm {
+    .form-group, button {
+        @extend .mb-4;
+    }
+
+    .error-msg {
+        @extend .text-danger, .mt-2;
+        font-weight: 550;
+    }
+
+    .mail-outcome {
+        @extend .p-3;
+        font-weight: 550;
+
+        &.mail-success {
+            @extend .bg-success;
+        }
+    
+        &.mail-failure {
+            @extend .bg-danger;
+        }
+    }
+
+}

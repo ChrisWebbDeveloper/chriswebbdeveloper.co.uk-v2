@@ -1,0 +1,31 @@
+#About {
+    .about-descr {
+        @extend .multiline;
+    }
+
+    .about-img {
+        @extend .mb-5, .mb-lg-0, .d-flex;
+
+        img {
+            @extend .w-100, .h-auto, .mx-auto, .my-auto;
+            max-height: 500px;
+            max-width: 300px;
+        }
+    }
+
+    h4, .h4 {
+        @extend .pt-3, .pb-2;
+    }
+
+    .current-project {
+        @extend .pt-3;
+
+        span {
+            @extend .h4, .mr-3;
+        }
+    }
+
+    .skills {
+        @extend .mb-3;
+    }
+}

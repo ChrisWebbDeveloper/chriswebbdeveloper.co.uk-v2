@@ -1,0 +1,12 @@
+#Projects {
+    @extend .text-light, .bg-dark;
+
+    .TechButtons {
+        @extend .mx-n2;
+        flex-wrap: wrap;
+
+        label {
+            @extend .mx-2, .mb-3;
+        }
+    }
+}

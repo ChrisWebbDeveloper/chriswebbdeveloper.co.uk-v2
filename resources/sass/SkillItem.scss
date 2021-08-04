@@ -1,0 +1,8 @@
+.SkillItem {
+    @extend .mb-3;
+
+    .progress {
+        @extend .mt-1;
+        height:5px;
+    }
+}

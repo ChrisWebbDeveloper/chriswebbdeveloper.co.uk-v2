@@ -1,0 +1,44 @@
+.container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1400px;
+}
+
+.container, .container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
+    @extend .px-5;
+}
+
+section {
+    @extend .py-5;
+
+    h2, .h2 {
+        @extend .mb-4;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @extend .bg-light;
+}
+
+hr {
+    @extend .border-primary;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: $filteredBlack;
+
+    &:hover, &:focus {
+        @extend .text-dark;
+    }
+}
+
+.technologies {
+    flex-wrap: wrap;
+}
+
+.multiline {
+    white-space: pre-line;
+    word-break: break-word;
+}

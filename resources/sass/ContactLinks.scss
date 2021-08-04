@@ -1,0 +1,12 @@
+#ContactLinks {
+    @extend .mb-3;
+    
+    a {
+        @extend .h2;
+
+        &:not(:last-child) {
+            @extend .mr-4;
+        }
+    }
+    
+}

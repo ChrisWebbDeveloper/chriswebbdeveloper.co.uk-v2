@@ -1,0 +1,27 @@
+// Colors
+$siteWhite: #fdfdfd;
+$siteBlack: #030816;
+$siteBlue: #61c7e0;
+$siteDarkBlue: #10698f;
+$siteGreen: #69aa35;
+$sitePink: #f060b4;
+
+$filteredBlack: rgba($siteBlack, 0.85);
+
+$navbar-height: 55px;
+$navbar-width: 250px;
+
+// Bootstrap Override
+$theme-colors: (
+    "primary": $siteBlue,
+    "secondary": $siteDarkBlue,
+    "success": $siteGreen,
+    "danger": $sitePink,
+    "light": $siteWhite,
+    "dark": $siteBlack,
+);
+
+$enable-rounded: false;
+
+// Bootstrap Import
+@import '~bootstrap/scss/bootstrap';

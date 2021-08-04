@@ -1,0 +1,69 @@
+@use 'sass:map';
+
+#SiteNav {
+    z-index: 1;
+
+    @include media-breakpoint-up(lg) {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        width: $navbar-width;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        
+        .navbar-brand {
+            white-space: normal;
+            margin-right: 0;
+            text-align: center;
+            padding: 20px 20px;
+            width: 100%;
+            border-bottom: $siteBlack 10px solid;
+            background-color: $siteWhite;
+
+            img {
+                padding: 0.75rem 0;
+                width: 125px;
+            }
+        }
+
+        #navbar-content {
+            text-align: right;
+        
+            .navbar-nav {
+                flex-direction: column;
+
+                .nav-link.active {
+                    background-color: map-get($theme-colors, light);
+                }
+            }
+        }
+    }
+
+    #navbar-content {
+        @extend .w-100;
+
+        .navbar-nav {
+            @extend .w-100, .mt-lg-n5;
+        
+            .Scrollspy {
+                @extend .w-100, .pl-0;
+                
+                .nav-link {
+                    @extend .py-lg-3, .pr-lg-4;
+                    font-weight: 550;
+                    font-size: 1.02rem;
+                    
+                    &:last-child {
+                        @extend .mb-2;
+                    }
+
+                    .site-nav-icon {
+                        @extend .d-none, .d-lg-inline, .ml-3;
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

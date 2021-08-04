@@ -1,0 +1,32 @@
+.ProjectItem {
+    @extend .mb-5;
+
+    .project-img {
+        @extend .mb-3, .mb-md-0, .mb-lg-3, .mb-xl-0;
+
+        img, div {
+            @extend .bg-primary, .w-100;
+        }
+
+        div {
+            @extend .h-100;
+        }
+    }
+
+    h4, .h4 {
+        @extend .text-primary;
+    }
+
+    h6, .h6 {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h4, .h4, h6, .h6, button, .btn {
+        @extend .mb-3;
+    }
+
+    .project-descr {
+        @extend .multiline;
+    }
+}
