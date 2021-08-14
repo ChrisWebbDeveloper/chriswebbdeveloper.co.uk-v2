@@ -5,12 +5,12 @@
 
     .error-msg {
         @extend .text-danger, .mt-2;
-        font-weight: 550;
+        font-weight: light;
     }
 
     .mail-outcome {
         @extend .p-3;
-        font-weight: 550;
+        font-weight: regular;
 
         &.mail-success {
             @extend .bg-success;

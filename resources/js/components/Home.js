@@ -9,9 +9,7 @@ export default function Home() {
                     Hi, I'm
                     <br />
                     <span className="text-primary text-break">
-                        Christopher
-                        <br />
-                        Webb
+                        Chris Webb
                     </span>
                 </h1>
 

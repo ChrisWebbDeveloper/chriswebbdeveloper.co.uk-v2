@@ -19,16 +19,42 @@ class ContactController extends Controller
         $name = $request->input('name');
         $fromEmail = $request->input('email');
         $content = $request->input('content');
-    
+        $appEmail = getenv('APP_EMAIL');
+        $emailBody = "
+            <p>
+                <strong>Name:</strong> $name
+                <br />
+                <strong>Email:</strong> $fromEmail
+            </p>
+
+            <p><strong>Message:</strong></p>
+
+            <p><em>$content</em></p>
+        ";
+
         $email = new \SendGrid\Mail\Mail(); 
-        $email->setFrom("webb.christopher@live.co.uk", "Contact form");
-        $email->setSubject('Request from contact form - ' . $name . ' <' . $fromEmail . '>');
-        $email->addTo("webb.christopher@live.co.uk");
-        $email->addContent("text/html", "Message from website:\n\n\n");
+        $email->setFrom($appEmail, $name);
+        $email->setSubject("CONTACT FORM - $name <$fromEmail>");
+        $email->addTo($appEmail);
+        $email->addContent("text/html", $emailBody);
+    
+        $receipt = new \SendGrid\Mail\Mail(); 
+        $receipt->setFrom($appEmail, 'Chris Webb Developer');
+        $receipt->setSubject('Your email has been received');
+        $receipt->addTo($fromEmail);
+        $receipt->addContent("text/html",
+            "
+                <p>Thank you for your email, I'll will reply to you ASAP!</p>
+                <p>Your email:</p>
+            "
+            .   $emailBody
+        );
+        
         $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
         
         try {
             $response = $sendgrid->send($email);
+            $sendReceipt = $sendgrid->send($receipt);
             echo $response->statusCode();
         } catch (Exception $e) {
             echo 'Caught exception: '. $e->getMessage() ."\n";
