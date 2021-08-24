@@ -253,17 +253,17 @@ class DatabaseSeeder extends Seeder
 
         DB::table('contact_links')->insert([
             'name' => 'facebook',
-            'link' => 'deanwebbdeveloper'
+            'link' => 'chriswebbdeveloper'
         ]);
 
         DB::table('contact_links')->insert([
             'name' => 'twitter',
-            'link' => 'DWebbDeveloper'
+            'link' => 'ChrisWebbDev'
         ]);
 
         DB::table('contact_links')->insert([
             'name' => 'instagram',
-            'link' => 'deanwebbdeveloper'
+            'link' => 'chriswebbdeveloper'
         ]);
 
         DB::table('contact_links')->insert([
@@ -273,7 +273,7 @@ class DatabaseSeeder extends Seeder
 
         DB::table('contact_links')->insert([
             'name' => 'github',
-            'link' => 'DeanWebbDeveloper'
+            'link' => 'ChrisWebbDeveloper'
         ]);
     }
 }
