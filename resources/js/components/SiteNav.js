@@ -12,7 +12,7 @@ export default function SiteNav() {
         
         Array.from(navLinks).forEach(function(navLink) {
             const navLinkHref = navLink.getAttribute('href').substring(1);
-            if (navLinkHref !== elem.id) navLink.classList.remove('active');
+            if (elem && navLinkHref !== elem.id) navLink.classList.remove('active');
         });
     };
 
@@ -30,7 +30,7 @@ export default function SiteNav() {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbar-content" />
             <Navbar.Collapse id="navbar-content">
-                <Nav>
+                <Nav defaultActiveKey="#Home">
                     <Scrollspy items={ ['Home', 'About', 'Projects', 'Contact'] } className="Scrollspy" currentClassName="active" offset={-400} componentTag={'div'} onUpdate={clearActive}>
                         <Nav.Link href="#Home">Home <FontAwesomeIcon className="site-nav-icon" icon={faHome} /></Nav.Link>
                         <Nav.Link href="#About">About <FontAwesomeIcon className="site-nav-icon" icon={faSmile} /></Nav.Link>
