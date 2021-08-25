@@ -166,6 +166,27 @@ class DatabaseSeeder extends Seeder
             'name' => 'SQLite'
         ]);
 
+        DB::table('technologies')->insert([
+            'id' => 11,
+            'name' => 'ASP.Net Core'
+        ]);
+
+        DB::table('technologies')->insert([
+            'id' => 12,
+            'name' => 'C#'
+        ]);
+
+        DB::table('technologies')->insert([
+            'id' => 13,
+            'name' => 'Typescript'
+        ]);
+
+        DB::table('technologies')->insert([
+            'id' => 14,
+            'name' => 'Gulp.js'
+        ]);
+
+
 
         //Projects
         DB::table('projects')->insert([
@@ -202,14 +223,20 @@ class DatabaseSeeder extends Seeder
 
         DB::table('project_technologies')->insert([
             'project_id' => 1,
-            'technology_id' => 7,
+            'technology_id' => 10,
             'position'=> 4
         ]);
 
         DB::table('project_technologies')->insert([
             'project_id' => 1,
-            'technology_id' => 8,
+            'technology_id' => 7,
             'position'=> 5
+        ]);
+
+        DB::table('project_technologies')->insert([
+            'project_id' => 1,
+            'technology_id' => 8,
+            'position'=> 6
         ]);
 
 
@@ -217,7 +244,7 @@ class DatabaseSeeder extends Seeder
             'id' => 2,
             'name' => 'Kelly Daniels Photography',
             'description' => 'A photography portfolio website developed using Wordpress. A theme has been used and overhauled with custom styling via css as well as alteration to PHP throughout. This is maintained using the Wordpress admin tools and run using a MySQL database.',
-            'link' => 'http://kellydanielsphotography.co.uk',
+            'link' => 'https://kellydanielsphotography.co.uk',
             'image_url' => 'kellydanielsphotography.jpg'
         ]);
 
@@ -237,6 +264,57 @@ class DatabaseSeeder extends Seeder
             'project_id' => 2,
             'technology_id' => 3,
             'position'=> 2
+        ]);
+
+        DB::table('project_technologies')->insert([
+            'project_id' => 2,
+            'technology_id' => 9,
+            'position'=> 3
+        ]);
+
+
+        DB::table('projects')->insert([
+            'id' => 3,
+            'name' => 'Portfolio Builder',
+            'description' => 'An ASP.Net Core 5 project that allows users to log in and arrange, display and sort portfolios. This allows photos to be uploaded, details and titles provided, and then included in various portfolios, and potentially in different categories. Portfolios can be kept in draft, privatised, or featured.\n\nAbout sections allow details and images to be included, and Contacts allows social media links to be included. This links to a MySQL database, and uses Typescript and SASS for functionality and styling.',
+            'link' => 'https://github.com/ChrisWebbDeveloper/portfolio-builder',
+            'image_url' => 'portfoliobuilder.jpg'
+        ]);
+
+        DB::table('project_technologies')->insert([
+            'project_id' => 3,
+            'technology_id' => 11,
+            'position'=> 0
+        ]);
+
+        DB::table('project_technologies')->insert([
+            'project_id' => 3,
+            'technology_id' => 12,
+            'position'=> 1
+        ]);
+
+        DB::table('project_technologies')->insert([
+            'project_id' => 3,
+            'technology_id' => 13,
+            'position'=> 2
+        ]);
+
+        DB::table('project_technologies')->insert([
+            'project_id' => 3,
+            'technology_id' => 7,
+            'position'=> 3
+        ]);
+
+        DB::table('project_technologies')->insert([
+            'project_id' => 3,
+            'technology_id' => 9,
+            'position'=> 4
+        ]);
+
+        DB::table('project_technologies')->insert([
+            'project_id' => 3,
+            'technology_id' => 14,
+            'position'=> 5
         ]);
 
 
