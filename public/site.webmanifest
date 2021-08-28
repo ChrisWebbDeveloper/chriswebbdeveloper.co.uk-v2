@@ -1,0 +1,20 @@
+{
+    "name": "Chris Webb Developer",
+    "short_name": "Chris Webb Developer",
+    "description" :"I am Chris Webb, a full-stack web developer based in Nottingham, UK. This is a portfolio of my work, using a variety of languages and frameworks, including ASP Net Core, PHP, Laravel, React, Typescript, SASS and MySQL",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#030816",
+    "background_color": "#030816",
+    "display": "standalone"
+}
