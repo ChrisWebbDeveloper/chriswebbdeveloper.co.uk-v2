@@ -21,6 +21,8 @@
 
 
 ## About the Project
+![chriswebbdeveloper co uk](https://github.com/ChrisWebbDeveloper/chris-webb-developer-2/assets/19428849/fe35474b-7cac-4380-b4e9-00949681f7b5)
+
 The second build for the chriswebbdeveloper.co.uk, a portfolio of my skills and projects. It has been built in a Laravel backend with all properties set via seeding and migration scripts. An .env (ignored in this repo) is used that opts for a sqlite database.
 
 A React front end is used to build the web page, with each section isolated into suitable components. An API call is then used to retrieve these details and populate the relevant sections of the web page accordingly.
