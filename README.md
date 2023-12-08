@@ -1,7 +1,7 @@
-# chriswebbdeveloper.co.uk
+# chriswebbdeveloper.co.uk-v2
 
 > [!NOTE]
-> This is an old version of the project, kept for posterity. Please see the [main branch](https://github.com/ChrisWebbDeveloper/chriswebbdeveloper.co.uk) for the latest version of this website
+> This is an old version of the project, kept for posterity. Please see the [chriswebbdeveloper.co.uk repository](https://github.com/ChrisWebbDeveloper/chriswebbdeveloper.co.uk) for the latest version of this website
 
 > [!CAUTION]
 > Some external links will likely no longer function due to being out of date. As this project is deprecated these will not be updated
@@ -21,7 +21,7 @@
 
 
 ## About the Project
-![chriswebbdeveloper.co.uk](https://github.com/ChrisWebbDeveloper/chris-webb-developer-2/assets/19428849/fe35474b-7cac-4380-b4e9-00949681f7b5)
+![chriswebbdeveloper.co.uk](https://github.com/ChrisWebbDeveloper/chriswebbdeveloper.co.uk-v2/assets/19428849/306bff21-6296-4b18-9c8f-a1fb33b3861b)
 
 The second build for the chriswebbdeveloper.co.uk, a portfolio of my skills and projects. It has been built in a Laravel backend with all properties set via seeding and migration scripts. An .env (ignored in this repo) is used that opts for a sqlite database.
 
