@@ -21,7 +21,7 @@
 
 
 ## About the Project
-![chriswebbdeveloper.co.uk](https://github.com/ChrisWebbDeveloper/chriswebbdeveloper.co.uk-v2/assets/19428849/306bff21-6296-4b18-9c8f-a1fb33b3861b)
+![chris-webb-developer-v2](https://github.com/ChrisWebbDeveloper/chriswebbdeveloper.co.uk-v2/assets/19428849/c1d2ea8b-1388-4a62-a11a-79a2960556a7)
 
 The second build for the chriswebbdeveloper.co.uk, a portfolio of my skills and projects. It has been built in a Laravel backend with all properties set via seeding and migration scripts. An .env (ignored in this repo) is used that opts for a sqlite database.
 
